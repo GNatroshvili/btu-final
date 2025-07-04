@@ -158,6 +158,21 @@
   padding-top: 24px;
 }
 
+.order-input {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+  min-width: 374.4px;
+  margin-top: 8px;
+  border: 0.5px solid #ebebeb;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  border-radius: 7px;
+  background-color: #ffffff;
+  height: 56px;
+}
+
 @media only screen and (max-width: 576px) {
   .order-input {
     min-width: 0;
@@ -166,20 +181,6 @@
 
 .order-input input {
   border: none;
-}
-
-.order-input button {
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 16px;
-  color: #000000;
-  padding: 8px;
-  background: transparent;
-  border-radius: 6px;
-  border: 1px solid black;
-  width: 76.45px;
-  transition: 0.2s ease-in-out;
-  cursor: pointer;
 }
 
 .order-input button:hover {
