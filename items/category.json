@@ -1,0 +1,28 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "category": "Phones",
+      "icon": "phone-icon.png",
+      "image": "../assets/phones.png"
+    },
+    {
+      "id": 2,
+      "category": "Computers",
+      "icon": "computer-icon.png",
+      "image": "../assets/computers.png"
+    },
+    {
+      "id": 3,
+      "category": "Headphones",
+      "icon": "headphones-icon.png",
+      "image": "../assets/headphones.png"
+    },
+    {
+      "id": 4,
+      "category": "Cameras",
+      "icon": "camera-icon.png",
+      "image": "../assets/cameras.png"
+    }
+  ]
+}

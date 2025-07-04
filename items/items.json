@@ -1,0 +1,28 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Apple iPhone 14",
+      "price": 900,
+      "image": "assets/Iphone14.png"
+    },
+    {
+      "id": 2,
+      "name": "AirPods Max",
+      "price": 549,
+      "image": "assets/airpods.png"
+    },
+    {
+      "id": 3,
+      "name": "Blackmagic",
+      "price": 2535,
+      "image": "assets/blackmagic.png"
+    },
+    {
+      "id": 4,
+      "name": "Apple Watch",
+      "price": 399,
+      "image": "assets/applewatch.png"
+    }
+  ]
+}
