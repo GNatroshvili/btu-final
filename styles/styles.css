@@ -249,6 +249,7 @@
 
 .accomplihsments-wrapper {
   margin-top: 80px;
+  margin-bottom: 148px;
 }
 
 @media only screen and (max-width: 420px) {
@@ -314,7 +315,6 @@
 
 footer {
   background-color: #ffffff;
-  margin-top: 148px;
 }
 
 @media only screen and (max-width: 420px) {
@@ -436,7 +436,7 @@ footer {
 
 .mobile-nav-item {
   font-size: 18px;
-  color: #0070C0;
+  color: #0070c0;
   text-decoration: none;
   font-weight: 500;
 }
@@ -474,3 +474,22 @@ body.no-scroll {
   display: block;
 }
 
+/* Add to styles.css */
+.cart {
+  position: relative;
+}
+
+.cart-badge {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
