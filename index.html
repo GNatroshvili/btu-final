@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="styles/layout.css" />
     <link rel="stylesheet" href="styles/header.css" />
     <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/footer.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -38,13 +39,13 @@
                     <img src="./assets/user.png" alt="User" class="user">
                 </figure>
             </div>
-            <div class="burger-menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
         </div>
     </header>
+    <div class="burger-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
     <nav class="mobile-menu">
         <a href="/" class="mobile-nav-item">Home</a>
         <a href="/" class="mobile-nav-item">About</a>
@@ -171,6 +172,10 @@
             </div>
         </div>
     </footer>
+    <div class="cart-popup" id="cartPopup">
+        <img src="./assets/check.png" alt="check" class="check"/>
+        <p>Item added to cart!</p>
+    </div>
     <div class="overlay"></div>
     <script src="scripts/cart.js"></script>
     <script src="scripts/data.js"></script>

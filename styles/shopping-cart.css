@@ -1,12 +1,21 @@
+:root {
+  --primary-color: #000000;
+  --secondary-color: #ffffff;
+  --accent-color: #0f6fdd;
+  --light-gray: #ebebeb;
+  --medium-gray: #545454;
+  --text-dark: #111111;
+}
+
 .divider-line {
   height: 1px;
-  background-color: #ebebeb;
+  background-color: var(--light-gray);
   width: 100%;
 }
 
 .product-divider {
   height: 0.5px;
-  background-color: #ebebeb;
+  background-color: var(--light-gray);
   width: 100%;
   margin-top: 32px;
 }
@@ -18,11 +27,11 @@
   margin-bottom: 101px;
 }
 
-@media only screen and (max-width: 1120px) {
+@media only screen and (max-width: 420px) {
   .shopping-cart-section {
     flex-direction: column;
     gap: 40px;
-    padding: 40px 0;
+    padding: 52px 0;
   }
 }
 
@@ -35,19 +44,22 @@
 .product {
   display: flex;
   align-items: center;
-  padding-top: 40px;
+  padding-top: 16px;
+  margin-top: 40px;
+  padding-bottom: 32px;
 }
 
 .product-img {
   width: 90px;
-  padding-right: 15px;
+  height: 90px;
+  margin-right: 23px;
 }
 
 .product-content {
   display: flex;
 }
 
-@media only screen and (max-width: 1120px) {
+@media only screen and (max-width: 420px) {
   .product-content {
     flex-direction: column;
   }
@@ -96,7 +108,7 @@
   border: none;
   font-size: 20px;
   cursor: pointer;
-  color: black;
+  color: var(--primary-color);
   width: 24px;
 }
 
@@ -118,21 +130,22 @@
 
 .order-summary-wrapper {
   height: fit-content;
-  border: 1px solid #ebebeb;
+  border: 1px solid var(--accent-color);
   border-radius: 10px;
   padding: 56px 64px;
   position: sticky;
   top: 112px;
-  background-color: #ffffff;
+  background-color: var(--secondary-color);
 }
 
-@media only screen and (max-width: 1168px) {
+@media only screen and (max-width: 420px) {
   .order-summary-wrapper {
     padding: 56px 60px;
+    margin-inline: 16px;
   }
 }
 
-@media only screen and (max-width: 1120px) {
+@media only screen and (max-width: 420px) {
   .order-summary-wrapper {
     padding: 56px 16px;
     position: static;
@@ -143,7 +156,7 @@
   font-weight: 700;
   font-size: 20px;
   line-height: 16px;
-  color: #111111;
+  color: var(--text-dark);
   padding-bottom: 40px;
 }
 
@@ -151,7 +164,7 @@
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
-  color: #545454;
+  color: var(--medium-gray);
 }
 
 .padding-top-24px {
@@ -164,16 +177,16 @@
   padding: 16px;
   min-width: 374.4px;
   margin-top: 8px;
-  border: 0.5px solid #ebebeb;
+  border: 0.5px solid var(--light-gray);
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
   border-radius: 7px;
-  background-color: #ffffff;
+  background-color: var(--secondary-color);
   height: 56px;
 }
 
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 420px) {
   .order-input {
     min-width: 0;
   }
@@ -184,12 +197,12 @@
 }
 
 .order-input button:hover {
-  background-color: #000000;
-  color: #ffffff;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
 }
 
 #input-border {
-  border: 0.5px solid #ebebeb;
+  border: 0.5px solid var(--light-gray);
   padding: 16px;
   min-width: 374.4px;
   border-radius: 7px;
@@ -200,7 +213,7 @@
   box-sizing: border-box;
 }
 
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 420px) {
   #input-border {
     min-width: 0;
   }
@@ -219,21 +232,21 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 32px;
-  color: #000000;
+  color: var(--primary-color);
 }
 
 .black-style-medium {
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  color: #000000;
+  color: var(--primary-color);
 }
 
 .gray-style-large {
   font-weight: 400;
   font-size: 16px;
   line-height: 32px;
-  color: #545454;
+  color: var(--medium-gray);
 }
 
 .tax {
@@ -258,8 +271,8 @@
   min-width: 408px;
   padding: 16px 0;
   margin-top: 48px;
-  background-color: #000000;
-  color: #ffffff;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
@@ -270,11 +283,11 @@
 }
 
 .checkout-btn:hover {
-  background-color: #f5f5f5;
-  color: #000000;
+  background-color: var(--light-gray);
+  color: var(--primary-color);
 }
 
-@media only screen and (max-width: 1120px) {
+@media only screen and (max-width: 420px) {
   .checkout-btn {
     width: 100%;
     min-width: 0;
@@ -300,4 +313,10 @@
 .empty-logo {
   width: 100%;
   margin-top: 48px;
+}
+
+@media only screen and (max-width: 420px) {
+  .product-list-wrapper {
+    margin-inline: 16px;
+  }
 }
