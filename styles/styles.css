@@ -1,5 +1,5 @@
 :root {
-  --primary-color: #0070c0; 
+  --primary-color: #0070c0;
   --primary-color-light: #0070c0b3;
   --secondary-color: #fff;
   --dark-color: #000000;
@@ -72,6 +72,7 @@
 @media only screen and (max-width: 420px) {
   .category-wrapper {
     margin-inline: 16px;
+    margin-top: 40px;
   }
 }
 
@@ -142,6 +143,12 @@
 .title {
   color: var(--primary-color-light);
   font-size: 33px;
+}
+
+@media only screen and (max-width: 420px) {
+  .title {
+    font-size: 24px;
+  }
 }
 
 .best-sellers {
