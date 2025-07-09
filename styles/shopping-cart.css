@@ -5,6 +5,12 @@
   --light-gray: #ebebeb;
   --medium-gray: #545454;
   --text-dark: #111111;
+  --blue-text: #0f7fff
+}
+
+.product-list-wrapper,
+.order-summary-wrapper {
+  color: var(--nav-link);
 }
 
 .divider-line {
@@ -101,6 +107,8 @@
   display: flex;
   align-items: center;
   gap: 8px;
+  background-color: var(--blue-text);
+  border-radius: 20px;
 }
 
 .product-quantity button {
@@ -117,8 +125,9 @@
   height: 30px;
   text-align: center;
   font-size: 16px;
-  border: 1px solid #ccc;
+  border: 1px solid var(--blue-text);
   border-radius: 5px;
+  background-color: var(--blue-text);
 }
 
 .product-price {
@@ -158,6 +167,7 @@
   line-height: 16px;
   color: var(--text-dark);
   padding-bottom: 40px;
+  color: var(--nav-link);
 }
 
 .input-label {
@@ -165,6 +175,7 @@
   font-size: 14px;
   line-height: 16px;
   color: var(--medium-gray);
+  color: var(--nav-link);
 }
 
 .padding-top-24px {
@@ -232,21 +243,21 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 32px;
-  color: var(--primary-color);
+  color: var(--nav-link);
 }
 
 .black-style-medium {
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  color: var(--primary-color);
+  color: var(--nav-link);
 }
 
 .gray-style-large {
   font-weight: 400;
   font-size: 16px;
   line-height: 32px;
-  color: var(--medium-gray);
+  color: var(--nav-link);
 }
 
 .tax {
@@ -267,6 +278,11 @@
   margin-top: 16px;
 }
 
+input::placeholder {
+  color: var(--nav-link);
+  opacity: 1;
+}
+
 .checkout-btn {
   min-width: 408px;
   padding: 16px 0;
@@ -280,6 +296,7 @@
   border-radius: 6px;
   transition: 0.2s ease;
   cursor: pointer;
+  background-color: #0f6fdd;
 }
 
 .checkout-btn:hover {
